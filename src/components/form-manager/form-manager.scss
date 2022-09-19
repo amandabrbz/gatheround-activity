@@ -1,0 +1,41 @@
+.form {
+  display: none;
+
+  &.open {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    margin: 50px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 24px;
+  }
+
+  &__label {
+    font-size: 1.1em;
+  }
+
+  &__input {
+    padding: 8px;
+    font-size: 1.2em;
+    margin: 20px 0;
+    border: 1px solid rgb(124, 124, 124);
+    border-radius: 8px;
+  }
+
+  &__button {
+    border: 1px solid rgb(124, 124, 124);
+    border-radius: 8px;
+    background: #ccc;
+    font-size: 1em;
+    color: rgb(43, 43, 43);
+    transition: 0.3s;
+    padding: 8px 16px;
+    margin: 0 auto;
+
+    &:hover {
+      color: rgb(92, 92, 92);
+      cursor: pointer;
+    }
+  }
+}

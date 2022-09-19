@@ -1,0 +1,40 @@
+.accordion {
+  width: 500px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__header,
+  &__content {
+    padding: 24px;
+  }
+
+  &__title {
+    font-size: 1.2em;
+    font-weight: 500;
+  }
+
+  &__button {
+    border: 1px solid rgb(124, 124, 124);
+    border-radius: 8px;
+    background: #ccc;
+    font-size: 1em;
+    color: rgb(43, 43, 43);
+    transition: 0.3s;
+    padding: 8px 16px;
+
+    &:hover {
+      color: rgb(92, 92, 92);
+      cursor: pointer;
+    }
+  }
+}

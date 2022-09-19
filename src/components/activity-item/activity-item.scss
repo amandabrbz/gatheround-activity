@@ -1,0 +1,35 @@
+.activity-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  + .activity-item {
+    margin-top: 16px;
+  }
+
+  &__title {
+    font-size: 1.2em;
+  }
+
+  &__actions {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+
+    &__button {
+      border: 1px solid rgb(124, 124, 124);
+      border-radius: 8px;
+      background: #ccc;
+      font-size: 1em;
+      color: rgb(43, 43, 43);
+      transition: 0.3s;
+      padding: 8px 16px;
+
+      &:hover {
+        color: rgb(92, 92, 92);
+        cursor: pointer;
+      }
+    }
+  }
+}
